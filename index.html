@@ -34,9 +34,15 @@
 			.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin-top:.75rem}
 			.skill{background:#fbfdff;border:1px solid #eef3ff;padding:.6rem .75rem;border-radius:8px;font-weight:600;color:#0f172a;text-align:center}
 
+			/* Grouped skills layout */
+			.skills-groups{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:.5rem}
+			.skills-subgrid h3{margin:0 0 .5rem;font-size:1rem}
+			.sub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem}
+
 			@media (min-width:700px){
 				.hero{grid-template-columns:1fr 320px}
 				.skills-grid{grid-template-columns:repeat(4,1fr)}
+				.skills-groups{grid-template-columns:1fr 1fr}
 			}
 
 			footer{margin-top:2rem;text-align:center;color:var(--muted);font-size:.9rem}
