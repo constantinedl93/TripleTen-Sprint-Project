@@ -34,15 +34,9 @@
 			.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin-top:.75rem}
 			.skill{background:#fbfdff;border:1px solid #eef3ff;padding:.6rem .75rem;border-radius:8px;font-weight:600;color:#0f172a;text-align:center}
 
-			/* Grouped skills layout */
-			.skills-groups{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:.5rem}
-			.skills-subgrid h3{margin:0 0 .5rem;font-size:1rem}
-			.sub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem}
-
 			@media (min-width:700px){
 				.hero{grid-template-columns:1fr 320px}
 				.skills-grid{grid-template-columns:repeat(4,1fr)}
-				.skills-groups{grid-template-columns:1fr 1fr}
 			}
 
 			footer{margin-top:2rem;text-align:center;color:var(--muted);font-size:.9rem}
@@ -117,31 +111,43 @@
 				<section id="skills">
 					<div class="card">
 						<h2>Skills & Qualifications</h2>
-						<p style="color:var(--muted)">Professional skills and certifications:</p>
-						<div class="skills-grid" aria-label="Professional and data science skills">
-							<div class="skill">Phlebotomy</div>
-							<div class="skill">Team Leadership</div>
-							<div class="skill">CPR Certified</div>
-							<div class="skill">Healthcare</div>
-							<div class="skill">Computer Systems</div>
-							<div class="skill">Inventory Management</div>
-							<div class="skill">Staff Training</div>
-							<div class="skill">Combat Care</div>
-							<div class="skill">First Aid</div>
-							<div class="skill">Operations Management</div>
-							<div class="skill">Customer Service</div>
-							<div class="skill">Quality Control</div>
-							<!-- Data science skills -->
-							<div class="skill">Python</div>
-							<div class="skill">Pandas / NumPy</div>
-							<div class="skill">SQL</div>
-							<div class="skill">Scikit-Learn</div>
-							<div class="skill">TensorFlow / PyTorch</div>
-							<div class="skill">Statistics</div>
-							<div class="skill">Data Visualization</div>
-							<div class="skill">EDA & Data Cleaning</div>
-							<div class="skill">Feature Engineering</div>
-							<div class="skill">Model Deployment</div>
+						<p style="color:var(--muted)">Professional and technical skills:</p>
+						<div style="display:flex;gap:1rem;flex-wrap:wrap">
+							<!-- Professional skills column -->
+							<div style="flex:1;min-width:220px">
+								<h3 style="margin-top:0">Professional</h3>
+								<div class="skills-grid" style="grid-template-columns:1fr;gap:.5rem" aria-label="Professional skills">
+									<div class="skill">Phlebotomy</div>
+									<div class="skill">Team Leadership</div>
+									<div class="skill">CPR Certified</div>
+									<div class="skill">Healthcare</div>
+									<div class="skill">Computer Systems</div>
+									<div class="skill">Inventory Management</div>
+									<div class="skill">Staff Training</div>
+									<div class="skill">Combat Care</div>
+									<div class="skill">First Aid</div>
+									<div class="skill">Operations Management</div>
+									<div class="skill">Customer Service</div>
+									<div class="skill">Quality Control</div>
+								</div>
+							</div>
+
+							<!-- Data science skills column -->
+							<div style="flex:1;min-width:220px">
+								<h3 style="margin-top:0">Data Science</h3>
+								<div class="skills-grid" style="grid-template-columns:1fr;gap:.5rem" aria-label="Data science skills">
+									<div class="skill">Python</div>
+									<div class="skill">Pandas / NumPy</div>
+									<div class="skill">SQL</div>
+									<div class="skill">Scikit-Learn</div>
+									<div class="skill">TensorFlow / PyTorch</div>
+									<div class="skill">Statistics</div>
+									<div class="skill">Data Visualization</div>
+									<div class="skill">EDA & Data Cleaning</div>
+									<div class="skill">Feature Engineering</div>
+									<div class="skill">Model Deployment</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
